@@ -1,0 +1,66 @@
+# MythicItemUpdate 配置文件
+# 版本: 1.0
+
+# 基础设置
+settings:
+  # 是否启用调试模式
+  debug: false
+  
+  # 是否启用插件功能
+  enabled: true
+  
+  # 物品更新设置
+  item-update:
+    # 是否启用自动更新
+    auto-update: true
+
+    # 是否更新玩家背包中的物品
+    update-inventory: true
+
+    # 是否更新玩家末影箱中的物品
+    update-enderchest: true
+
+    # 是否更新掉落在地上的物品
+    update-dropped-items: true
+
+    # 是否更新容器中的物品（箱子、漏斗等）
+    update-containers: true
+
+# 事件处理设置
+events:
+  # 是否启用玩家加入时更新背包物品
+  update-on-join: true
+
+  # 玩家加入后延迟多久开始更新（tick，20tick=1秒）
+  join-update-delay: 40
+
+  # 是否启用打开背包时更新物品
+  update-on-inventory-open: true
+
+  # 是否启用点击物品时检查更新
+  update-on-click: true
+
+  # 是否启用拾取物品时检查更新
+  update-on-pickup: true
+
+  # 是否向管理员发送重载通知
+  notify-admins: true
+
+# 性能设置
+performance:
+  # 最大同时处理的玩家数量
+  max-concurrent-players: 10
+
+  # 超时时间（秒）- 单个物品更新的最大时间
+  timeout: 30
+
+# 日志设置
+logging:
+  # 是否记录更新统计
+  log-statistics: true
+  
+  # 是否记录详细的更新过程
+  log-details: false
+  
+  # 是否在控制台显示进度
+  show-progress: true
