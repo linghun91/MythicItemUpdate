@@ -1,0 +1,61 @@
+# MythicItemUpdate 消息配置文件
+# 版本: 1.0
+# 支持颜色代码: &a, &b, &c 等
+
+# 插件启动消息
+startup:
+  enabled: "&a[MythicItemUpdate] 插件已启用！"
+  disabled: "&c[MythicItemUpdate] 插件已禁用！"
+  mythicmobs-not-found: "&c[MythicItemUpdate] 错误：未找到MythicMobs插件！"
+  mythicmobs-found: "&a[MythicItemUpdate] 成功连接到MythicMobs插件！"
+
+# 重载相关消息
+reload:
+  config-reloaded: "&a[MythicItemUpdate] 配置文件已重载！"
+  update-failed: "&c[MythicItemUpdate] 物品更新失败：{error}"
+
+# 管理员通知消息
+messages:
+  reload-failure: "&c[MythicItemUpdate] MythicMobs重载后物品更新失败：{error}"
+
+# 物品更新消息
+item-update:
+  processing-player: "&e[MythicItemUpdate] 正在处理玩家 {player} 的物品..."
+  player-completed: "&a[MythicItemUpdate] 玩家 {player} 的物品更新完成，更新了 {count} 个物品。"
+  item-updated: "&7[MythicItemUpdate] 物品已更新：{item}"
+  item-not-mythic: "&7[MythicItemUpdate] 跳过非MythicMobs物品：{item}"
+  item-update-failed: "&c[MythicItemUpdate] 物品更新失败：{item} - {error}"
+
+# 统计信息消息
+statistics:
+  total-players: "&e[MythicItemUpdate] 总玩家数：{count}"
+  total-items-found: "&e[MythicItemUpdate] 找到的物品总数：{count}"
+  total-items-updated: "&a[MythicItemUpdate] 成功更新的物品数：{count}"
+  total-items-failed: "&c[MythicItemUpdate] 更新失败的物品数：{count}"
+  processing-time: "&e[MythicItemUpdate] 处理时间：{time}ms"
+
+# 错误消息
+errors:
+  general-error: "&c[MythicItemUpdate] 发生错误：{error}"
+  player-not-found: "&c[MythicItemUpdate] 玩家未找到：{player}"
+  item-null: "&c[MythicItemUpdate] 物品为空"
+  mythicmobs-api-error: "&c[MythicItemUpdate] MythicMobs API错误：{error}"
+  timeout-error: "&c[MythicItemUpdate] 操作超时：{operation}"
+  permission-denied: "&c[MythicItemUpdate] 权限不足"
+
+# 进度消息
+progress:
+  batch-processing: "&e[MythicItemUpdate] 正在处理批次 {current}/{total}..."
+  player-progress: "&e[MythicItemUpdate] 玩家进度：{current}/{total}"
+  container-processing: "&e[MythicItemUpdate] 正在处理容器：{type}"
+
+# 命令消息
+commands:
+  reload-success: "&a[MythicItemUpdate] 插件已重载！"
+  update-manual: "&a[MythicItemUpdate] 手动更新已开始！"
+  status-enabled: "&a[MythicItemUpdate] 状态：已启用"
+  status-disabled: "&c[MythicItemUpdate] 状态：已禁用"
+  help-header: "&e=== MythicItemUpdate 帮助 ==="
+  help-reload: "&a/miu reload &7- 重载插件配置"
+  help-update: "&a/miu update &7- 手动触发物品更新"
+  help-status: "&a/miu status &7- 查看插件状态"
