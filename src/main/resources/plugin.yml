@@ -1,7 +1,0 @@
-name: MythicItemUpdate
-version: '1.0-SNAPSHOT'
-main: cn.i7mc.mythicItemUpdate.MythicItemUpdate
-api-version: '1.20'
-depend: [MythicMobs]
-description: 'MythicMobs自定义物品动态更新插件'
-author: 'i7mc'
